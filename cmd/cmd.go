@@ -1,4 +1,4 @@
-package main
+package cmd
 
 import (
 	"bytes"
@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func main() {
+func LaunchCli() {
 	// Open the file that you want to send
 	file, err := os.Open("/tmp/test.txt")
 	if err != nil {
